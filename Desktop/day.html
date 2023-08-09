@@ -1,0 +1,43 @@
+<html>
+<head>
+
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<body>
+
+<label class="required-field">Total</label>
+<input type="number" class="form-control" name="sub_total" id="txtresult">
+<br>
+<br>
+<br>
+<br>
+ <label class="required-field">LOP Days</label>
+<input type="number" class="form-control" name="LOP"  id="Text7" >
+<br>
+<br>
+<label class="required-field">LOP</label>
+     <input type="number" class="form-control" name="LOPs" id="txtloss" onclick="loss();">
+</body>
+
+<script>
+function loss() {
+
+
+var resultl = parseInt(document.getElementById("txtresult").value);
+
+var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    var loss=(result)/new Date(year, month, 0).getDate();
+    var sas = parseInt(document.getElementById("Text7").value);
+    var ase=sas*loss
+document.getElementById("txtloss").value = parseInt(ase);
+
+    }
+</script>
+</html>

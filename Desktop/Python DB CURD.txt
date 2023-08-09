@@ -1,0 +1,78 @@
+Select:
+*******
+import MySQLdb
+conn=MySQLdb.connect(host='localhost',database='world',user='root',password='newrootpassword')
+cursor=conn.cursor()
+cursor.execute("select *from attendence")
+row=cursor.fetchone()
+while row is not None:
+    print(row)
+    row=cursor.fetchone()
+cursor.close()
+conn.close()
+
+
+Insert:
+*******
+import MySQLdb
+conn=MySQLdb.connect(host='localhost',database='world',user='root',password='newrootpassword')
+cursor=conn.cursor()
+str="insert into attendence(empid,ename,intime,outtime) values(17,'venki',10.00,8.00)"
+try:
+    cursor.execute(str)
+    conn.commit()
+    print("1 row insert..")
+except:
+    conn.rollback()
+finally:
+    cursor.execute("select *from attendence")
+    row=cursor.fetchone()
+    while row is not None:
+        print(row)
+        row=cursor.fetchone()
+cursor.close()
+conn.close()
+
+
+Update:
+*******
+import MySQLdb
+conn=MySQLdb.connect(host='localhost',database='sample',user='root',password='hitech')
+cursor=conn.cursor()
+str="update class1 set regno = 100 where id='1"
+try:
+    cursor.execute(str)
+    conn.commit()
+    print("1 row deleted..")
+except:
+    conn.rollback()
+finally:
+    cursor.execute("select *from class1")
+    row=cursor.fetchone()
+    while row is not None:
+        print(row)
+        row=cursor.fetchone()
+cursor.close()
+conn.close()
+
+
+Delete:
+*******
+import MySQLdb
+conn=MySQLdb.connect(host='localhost',database='sample',user='root',password='hitech')
+cursor=conn.cursor()
+str="delete from class1 where id=5"
+try:
+    cursor.execute(str)
+    conn.commit()
+    print("1 row deleted..")
+except:
+    conn.rollback()
+finally:
+    cursor.execute("select *from class1")
+    row=cursor.fetchone()
+    while row is not None:
+        print(row)
+        row=cursor.fetchone()
+cursor.close()
+conn.close()

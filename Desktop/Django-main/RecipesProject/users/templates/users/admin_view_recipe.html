@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe</title>
+        <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'recipes/css/viewrecipe.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+</head>
+<body>
+{% include 'users/admin_nav.html' %}
+<div class="container">
+    <div class="card mb-3">
+        <img src="/{{my_object.recipe_pic}}" class="card-img-top" alt="...">
+        <h5 class="card-header">{{obj.category}}</h5>
+        <div class="card-body">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><h4 class="card-title">{{my_object.recipe_name}}</h4></li>
+                  <li class="list-group-item">
+                      <h6><b>Ingredient</b></h6>
+                      {{my_object.ingredient}}
+                  </li>
+                  <li class="list-group-item">
+                      <h6><b>How to Make</b></h6>
+                      {{my_object.How_to_make}}</li>
+              </ul>
+        </div>
+        <div class="card-footer text-muted">
+            Created by: {{my_object.created_by.first_name}} {{my_object.created_by.last_name}}
+         </div>
+    </div>
+    {% if my_object.stat == "True" %}
+    <a href="{% url 'admin_recipe_view' %}" class="btn btn-outline-success" id="bt1">Back</a>
+    {% else %}
+    <form method="post" action="{% url 'recipes' id=my_object.id %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-outline-success" >Approve</button>
+    </form>                                        
+   
+    {% endif %}
+</div>
+</body>
+</html>

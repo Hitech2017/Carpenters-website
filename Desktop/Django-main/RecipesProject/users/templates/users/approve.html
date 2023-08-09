@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    {% load static %}
+   
+</head>
+<style>
+  *{
+margin: 0;
+padding: 0;
+}
+.table-box
+{
+margin: 50px auto;
+}
+
+.table-row{
+display: table;
+width: 80%;
+margin: 10px auto;
+font-family: sans-serif;
+background: transparent;
+padding: 12px 0;
+color: #555;
+font-size: 13px;
+box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+background: #8665f7;
+box-shadow: none;
+color: #fff;
+font-weight: 600;
+}
+.table-head .table-cell{
+border-right: none;
+}
+.table-cell{
+display: table-cell;
+width: 20%;
+text-align: center;
+padding: 4px 0;
+border-right: 1px solid #d6d4d4;
+vertical-align: middle;
+}
+.first-cell{
+text-align: left;
+padding-left: 10px;
+}
+.last-cell{
+border-right: none;
+}
+a{
+text-decoration: none;
+color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+.table-row {
+font-size: 11px;
+}
+}
+</style>
+<style>
+    footer {
+  text-align: center;
+  padding: 1px;
+  background-color: rgb(41, 36, 36);
+  color: white;
+}
+</style>
+
+<body>{% include 'users/admin.html' %}
+<!-- <div class="report-container" style="margin-top: -35%;margin-left: 16%;margin-right: 5%;" > -->
+  
+  {% for obj in form %}
+  <div class="col-3">
+    <div class="card h-100" style="width: 18rem;">
+      <img src="/{{obj.recipe_pic}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{obj.recipe_name}}</h5>
+        <p class="card-text">Created by: {{obj.created_by.first_name}} {{obj.created_by.last_name}}</p>
+        <a href="{% url 'viewrecipe' obj.pk %}" class="btn btn-outline-success" id="bt1">View</a>
+        <a href="{% url 'editrecipe' obj.pk %}" class="btn btn-outline-success" id="bt2">Edit</a>
+        <a href="{% url 'deleterecipe' obj.pk %}" class="btn btn-outline-success" id="bt3">Delete</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- <div class="report-container" style="margin-top: -35%;margin-left: 16%;margin-right: 5%;" >
+    <br>
+    <div class="table-box">
+        <div class="table-row table-head">
+            <div class="table-cell first-cell">
+                <p>UserName</p>
+            </div>
+            <div class="table-cell">
+                <p>Email</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>Edit</p>
+            </div> 
+            <div class="table-cell last-cell">
+              <p>Delete</p>
+          </div> 
+        </div>
+
+        {% for i in data %}
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p> {{i.recipe_name}}</p>
+            </div>
+            <div class="table-cell">
+              <img src="{{ i.recipe_pic.url }}" width="50px" , height="50px">
+               
+            </div>
+            <div class="table-cell">
+              <p> Aprove </p>
+            </div> 
+            <div class="table-cell last-cell">
+              <p> Edit/Delete</p>
+            </div>  
+        </div>
+        {% endfor %}    
+          -->
+</div>   
+
+</div>

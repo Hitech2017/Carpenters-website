@@ -1,0 +1,29 @@
+Insert Code:
+
+
+  <?php
+  if(isset($_POST['submit']))
+  {
+    $username =$_POST['username'];  
+    $password =$_POST['pass'];
+    $query = "INSERT INTO `adminlogin`(`username`,`password`)
+    VALUES ('$username','$password')";
+  $query_run = mysqli_query($con,$query);
+  
+    if($query_run)
+    {
+      echo '<script type="text/javascript"> alert("Data Added  Successfully!")
+          
+      </script>';
+
+    }
+    else
+    {
+      echo '<script type="text/javascript"> alert("Data Added  Successfully!")
+          
+      </script>';
+    }
+  }
+
+
+  ?>
