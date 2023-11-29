@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.home_root{
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.home_root > * {
+    font-family: var(--primaryFontFamily);
+}
+
+.home_section { 
+    height: 100vh;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home_section_banner {
+    margin-top: 10vh;
+    background-color: transparent;
+}
+
+.home_promo_slogan_container {
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 12vh;
+}
+
+.home_promo_slogan_line{
+    color: var(--white);
+    font-size: 2.8rem;
+    background: #0F0E17;
+    margin-left: 3vw;
+}
+
+.home_promo_slogan_line1{    
+    text-shadow: 1px 2px 0px #89764f;
+}
+
+.home_promo_slogan_line2{
+    color: var(--goldLogo);
+    text-shadow: 1px 2px 0px #d2cdc2;
+}
+
+.home_promo_border_style {
+    border: var(--royalBlue) 2px groove;
+    position: absolute;
+    width: 30vw;
+    height: 61vh;
+    border: 10px solid #e8e5de40;
+    display: inline-block;
+    z-index: -1;
+}
+
+.home_section_right_banner{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    flex: 1 1;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+}
+
+.home_banner_logo {
+    height: 60vh;
+    width: 20vw;
+}
+
+.home_section_logo_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.home_section_company_name{
+    color: var(--goldLogo);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+}
+
+.home_section_company_tag{
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-top: 3vh;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.home_video_playButton{
+    width: 4vw;
+    height: 9vh;
+    margin: 0.5vw;
+}
+
+.home_scroller {
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 5vh;
+    right: 1vw;
+    transform: rotate(90deg);
+}
+
+/* Why Carpenter's */
+
+.home_section_title{
+    color: var(--white);
+    font-size: 2em;
+    width: 100vw;
+    padding-left: 1vw;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.home_choose_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_choose_trades_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.home_choose_text {
+    color: var(--white);
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vh;
+    text-align: justify;
+}
+
+.home_choose_reason_1 {
+    background: none;
+    margin-top: 4vh;
+}
+
+.home_choose_reason_2 {
+    color: var(--goldLogo);
+    font-weight: 400; 
+}
+
+.home_choose_contact_button {
+    background: #e8e5de40;
+    border: 0px;
+    border-radius: 2px;
+    align-self: center;
+    margin-top: 5vh;
+    color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 7vh;
+    border-bottom: 2px groove #ffc95a;
+    font-family: 'League Gothic';
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+}
+
+.home_section_logo {
+    border: none;
+}
+
+.home_section_choose {
+    display: block;
+}
+
+.home_section_topContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.home_section_services {
+    background-color: transparent;
+}
+
+/* Our Services Section */
+
+.home_section_services{
+    background: transparent;
+    display: block;
+    height: 110vh;
+}
+
+.home_services_container {
+    color: #FFFFFF;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_services_desc {
+    font-family: 'League Gothic', sans-serif;
+    color: #f1e8e8;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.home_services{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    color: #f1e8e8;
+    justify-content: space-between;
+}
+
+.home_service{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home_service_pic{
+    border: white 0px groove;
+}
+
+.home_service_name {
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+/* Banner 2*/
+
+.home_section_banner_2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home_promo_image_container {
+    width: 45%;
+}
+
+.home_section_right_banner_2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 50%;
+    flex: 1 1;
+    align-items: center;
+}
+
+.home_banner_int_design {
+    border: none;
+}
+
+.home_section_banner2_title {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.home_section_banner2_title_part {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--fontColorPrimary);
+    font-weight: 400;
+}
+
+.home_section_banner2_promo_text_1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    width: 30vw;
+    margin-top: 5vh;
+    color: var(--goldLogo);
+    font-weight: 500;
+}
+
+.home_section_banner2_promo_text_2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 5vh;
+    margin-top: 5vh;
+    color: var(--white);
+}
+
+.home_contact_button{
+    padding: 0.5em 1.1em;
+    white-space: nowrap;
+    background-color: var(--royalBlue);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.9em;
+    border: 2px solid var(--royalBlue);
+    text-transform: capitalize;
+    letter-spacing: 0.9px;
+    margin-top: 5vh;
+}
+
+/* Testimonials */
+
+.home_section_testimonials {
+    display: block;
+}
+
+.home_section_testimonials_slider {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.home_section_testimonial_slogan{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 7vh;
+    letter-spacing: 0.1em;
+    border-radius: 0px;
+    color: var(--goldLogo);
+    font-weight: 600;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .home_section_banner{
+        flex-direction: column;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (max-width: 600px) {
+    .home_section_banner{
+        flex-direction: column;
+    }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 768px) { 
+    .home_section_banner{
+        flex-direction: column;
+    }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+}

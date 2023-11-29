@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato&display=swap');
+
+:root {
+    --blue: #1e90ff;
+    --white: #FFFFFF;
+    --black: #0F0E17;
+    --darkGray: #191821;
+    --regGray: #797881;
+    --anotherGray: #262529;
+    --fontColorPrimary: #BCBCBC;
+    --royalBlue: #4760FF;
+    --primaryFontFamily: "DM Sans";
+    --goldLogo: #ffc95a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "DM Sans";
+    font-size: "1.4vw";
+    font-weight: 400;
+    background-color: #0F0E17;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 22px;
+    line-height: 38px;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+}

@@ -1,0 +1,128 @@
+.menu_section {
+    margin: 0 0.4vw;
+    display: flex;
+    position: relative;
+    
+}
+
+.menu_section ol {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.menu_section .ham {
+    display: none;
+}
+
+.menu_section ol li {
+    padding: 0 1em;
+}
+
+.menu_section ol li:hover {
+    opacity: 0.7;
+}
+
+.menu_section ol li a {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu_section button {
+    padding: 0.5em 1.1em;
+    white-space: nowrap;
+    background-color: #4760FF;
+    color: #FFFFFF;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.9em;
+    border: 2px solid #4760FF;
+    text-transform: capitalize;
+    letter-spacing: 0.9px;
+}
+
+.menu_section button:hover {
+    opacity: 0.7;
+    border: 2px solid #6074f7;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .menu_section ol {
+        display: none;
+    }
+
+    .menu_section button {
+        display: none;
+    }
+
+    .menu_section .ham {
+        display: block;
+    }
+
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .menu_section ol {
+        display: none;
+    }
+
+    .menu_section button {
+        display: none;
+    }
+
+    .menu_section .ham {
+        display: block;
+    }
+
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    .menu_section ol {
+        display: none;
+    }
+
+    .menu_section button {
+        display: none;
+    }
+
+    .menu_section .ham {
+        display: block;
+    }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    .menu_section ol {
+        display: flex;
+    }
+
+    .menu_section button {
+        display: block;
+    }
+
+    .menu_section .ham {
+        display: none;
+    }
+
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .menu_section ol {
+        display: flex;
+    }
+
+    .menu_section button {
+        display: block;
+    }
+
+    .menu_section .ham {
+        display: none;
+    }
+
+}

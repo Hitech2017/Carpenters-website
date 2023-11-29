@@ -1,0 +1,27 @@
+.transparent_card {
+    border-radius: 12px;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transparent_card_desc_container {
+    border: none;
+}
+.transparent_card_name {
+    font-size: 1em;
+    text-align: center;
+    width: 10vw;
+    font-weight: 400;
+}
+
+.transparent_card_desc {
+    border: none;
+}
+
+.transparent_card_image {
+    border: 1px groove white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}

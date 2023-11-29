@@ -1,0 +1,31 @@
+.navBar {
+    height: 10vh;
+    width: 100vw;
+    background-color: #1c1a1b;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 24%);
+    position: fixed;
+    z-index: 2;
+}
+
+.navBar_Container {
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.navBar_logo_image {
+    display: block;
+    width: 15vw;
+    height: 5vw;
+    background: url("logo_navBar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navBar_company_name{
+    font-size: 2rem;
+}

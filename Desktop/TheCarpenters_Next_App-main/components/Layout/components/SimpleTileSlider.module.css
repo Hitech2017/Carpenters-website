@@ -1,0 +1,11 @@
+.tile_slider_image {
+    border-radius: 1px;
+}
+
+.tile_slider_desc {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 7vh;
+    border-radius: 0px;
+    font-weight: 400;
+}

@@ -1,0 +1,171 @@
+.contact_container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8em 10vw 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_wrapper {
+    max-width: 1250px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contact_form {
+    width: 50%;
+}
+
+.contact_img_wrapper {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    /* height: 100%; */
+}
+
+.contact_img_wrapper span {
+    border-radius: 6px;
+    width: 100%;
+    height: 50%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.contact_form {
+    padding-left: 2em;
+}
+
+.contact_form form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.contact_form form div label {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.8px;
+    color: #BCBCBC;
+}
+
+.contact_form form div input {
+    padding: 0.8em;
+    border-radius: 6px;
+    border-style: none;
+    background: #e4e4e4;
+}
+
+.contact_form form div textarea {
+    width: 100%;
+    height: 16em;
+    resize: none;
+    border-radius: 6px;
+    padding: 0.5em;
+    background: #e4e4e4;
+    border-style: none;
+}
+
+.contact_form form div button {
+    padding: 0.5em;
+    border-radius: 6px;
+    border-style: none;
+    border: 2px solid #F0A500;
+    background-color: #F0A500;
+    font-weight: bold;
+}
+
+.contact_form form div button:hover {
+    border: 2px solid #eeb438;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .contact_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_img_wrapper {
+        width: 100%;
+    }
+
+    .contact_form {
+        width: 100%;
+        padding: 5em 0 0;
+    }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .contact_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_img_wrapper {
+        width: 100%;
+    }
+
+    .contact_form {
+        width: 100%;
+        padding: 5em 0 0;
+    }
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    .contact_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_img_wrapper {
+        width: 100%;
+    }
+
+    .contact_form {
+        width: 100%;
+        padding: 5em 0 0;
+    }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    .contact_wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact_img_wrapper {
+        width: 50%;
+    }
+
+    .contact_form {
+        width: 50%;
+        padding: 0;
+        padding-left: 2em;
+    }
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .contact_wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact_img_wrapper {
+        width: 50%;
+    }
+
+    .contact_form {
+        width: 50%;
+        padding: 0;
+        padding-left: 2em;
+    }
+}

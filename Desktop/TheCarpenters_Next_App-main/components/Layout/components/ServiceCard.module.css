@@ -1,0 +1,32 @@
+.service_card {
+    background: var(--anotherGray);
+    border-radius: 12px;
+    margin-top: 5vh;
+    border: 1px var(--anotherGray) solid;
+}
+
+.service_card:hover {
+    border: 2px var(--goldLogo) solid;
+    transform: scale(1.1);
+}
+
+.service_card_desc_container {
+    border: none;
+}
+.service_card_name {
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 7vh;
+}
+
+.service_card_desc {
+    border: none;
+}
+
+.service_card_image {
+    border: 1px groove white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}

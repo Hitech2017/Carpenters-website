@@ -1,0 +1,89 @@
+.main_layout {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.phone_menu {
+    position: fixed;
+    z-index: 1999;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0F0E17;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.phone_menu ol {
+    padding: 0 10vw;
+    width: 100%;
+}
+
+.phone_menu ol li {
+    border-bottom: 2px solid #191821;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone_menu ol li a {
+    padding: 1em 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.phone_menu ol li a:hover {
+    opacity: 0.7;
+}
+
+.phone_menu ol li button {
+    margin-top: 1em;
+    padding: 0.8em;
+    white-space: nowrap;
+    background-color: #4760FF;
+    color: #FFFFFF;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.9em;
+    border: 3px solid #4760FF;
+    text-transform: capitalize;
+    letter-spacing: 0.9px;
+}
+
+.phone_menu ol li button:hover {
+    opacity: 0.7;
+    border: 3px solid #6074f7;
+}
+
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .phone_menu {
+        display: flex;
+    }
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    .phone_menu {
+        display: flex;
+    }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    .phone_menu {
+        display: none;
+    }
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .phone_menu {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+.nav_bar {
+    padding: 1em 2em;
+    background-color: #0F0E17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 1px 0px 9px #2a2727;
+}
+
+.nav_bar_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F0E17;
+    width: 100%;
+    max-width: 1250px;
+}
+

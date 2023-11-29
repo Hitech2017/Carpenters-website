@@ -1,0 +1,229 @@
+.about_wrapper {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8em 10vw 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_main {
+    max-width: 1250px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us h1, .team_wrapper h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-weight: 400;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    color: #4760FF;
+}
+
+.team_wrapper h1 {
+    margin: 0 0 1.5em;
+}
+
+.about_us p {
+    text-align: justify;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+.about_us span {
+    color: gold;
+    letter-spacing: 1px;
+}
+
+.about_cta_wrapper {
+    background-color: #4760FF;
+    padding: 3em;
+    border-radius: 6px;
+    margin: 2.5em 0 5em;
+}
+
+.about_cta_wrapper h1 {
+    color: #fff;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.about_cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_cta .secondary {
+    border: 5px solid #F0A500;
+    background-color: #F0A500;
+    margin-right: 0.5em;
+    color: #FFFFFF;
+}
+
+.about_cta .secondary:hover {
+    border: 5px solid #eeb438;
+    color: #FFFFFF;
+}
+
+.about_cta button {
+    padding: 0.8em 2.2em;
+    white-space: nowrap;
+    background-color: #f0f0f0;
+    color: #000;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.9em;
+    border: 5px solid #f0f0f0;
+    text-transform: capitalize;
+    letter-spacing: 0.9px;
+    font-weight: bold;
+}
+
+.about_cta button:last-child {
+    margin-left: 0.5em;
+}
+
+.about_cta button:hover {
+    opacity: 0.7;
+    border: 5px solid #ffffff;
+}
+
+.profile_wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.profile_wrapper .profile:last-child {
+    margin: 0 0 2em 1em;
+}
+
+.profile {
+    width: 50%;
+    
+}
+
+.profile_main {
+    margin: 0 1em 2em 0;
+    background-color: #282732;
+    border-radius: 6px;
+}
+
+.profile_div {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile_img_wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_intro {
+    width: 50%;
+    padding: 0 1em;
+}
+
+.profile_intro h3 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.profile_intro p {
+    font-size: 1em;
+    letter-spacing: 0.8px;
+    color: #BCBCBC;
+}
+
+.profile_img_wrapper img {
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .about_cta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_cta button {
+        margin-bottom: 1.5em;
+    }
+
+    .profile_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+        margin: 0;
+    }
+
+    .profile_main {
+        margin: 0 0 2.5em;
+    }
+
+    .profile_wrapper .profile:last-child {
+        margin: 0;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .about_cta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_cta button {
+        margin-bottom: 1.5em;
+    }
+
+    .profile_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+        margin: 0;
+    }
+
+    .profile_main {
+        margin: 0 0 2.5em;
+    }
+
+    .profile_wrapper .profile:last-child {
+        margin: 0;
+    }
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+ 
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+ 
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+}
